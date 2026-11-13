@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <input type="text" placeholder="enter your message here" id="input">
+    <div id="display"></div>
+    <button onclick="show()">show</button>
+
+
+    <script>
+        function show(){
+        let userInput = document.getElementById('input').value
+        let displayArea = document.getElementById('display')
+        displayArea.innerHTML += `<p>${userInput}</p>`
+        document.getElementById('input').value =''
+        }
+    </script>
+</body>
+</html>
